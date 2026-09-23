@@ -106,12 +106,13 @@ sources:
 
   - target: not(ucie)
     files:
-      - hw/ucie_tile.sv
+      - hw/ucie_pcs_wrap.sv
   - target: ucie
     files:
-      - .deps/ucie/hw/ucie_tile.sv
+      - .deps/ucie/hw/ucie_pcs_wrap.sv
 
   # Level 3
+  - hw/ucie_tile.sv
   - hw/cluster_tile.sv
   - hw/gwaihir_top.sv
 
